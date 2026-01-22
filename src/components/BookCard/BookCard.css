@@ -1,0 +1,94 @@
+.book-card {
+  width: 180px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+}
+
+.book-card:hover {
+  border-color: #007bff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.book-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px;
+  transition: color 0.3s ease;
+}
+
+.book-title:hover {
+  color: #007bff;
+}
+
+.book-authors,
+.book-date {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.book-authors {
+  font-style: italic;
+}
+
+.book-card:hover .book-title {
+  color: #0056b3;
+}
+
+.book-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.load-more-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 24px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
